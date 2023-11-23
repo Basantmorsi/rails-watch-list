@@ -1,0 +1,11 @@
+<h1>
+   <% if(@lists.empty?) %>
+    No lists yet
+   <% end %>
+  <ol>
+    <% @lists.each do |item| %>
+      <li><%= item.name %></li>
+    <% end %>
+  </ol>
+</h1>
+<%= link_to "+Add new list",  new_list_path %>
