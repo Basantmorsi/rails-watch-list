@@ -1,7 +1,13 @@
 <h1><%= @list.name %></h1>
 <ol>
   <% @list.bookmarks.each do |bookmark|%>
-    <li><%= bookmark.movie.title %>, (<%= bookmark.comment %>)</li>
+    <li>
+      <div>
+         <%= bookmark.movie.title %>, (<%= bookmark.comment %>)
+      </div>
+      <%= link_to "Delete", list_bookmark_path(bookmark),
+              data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}%>
+    </li>
   <%end %>
 </ol>
 <%= link_to "Back to all lists" , lists_path %>
