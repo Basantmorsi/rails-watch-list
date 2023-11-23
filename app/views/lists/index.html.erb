@@ -4,8 +4,9 @@
    <% end %>
   <ol>
     <% @lists.each do |item| %>
-      <li><%= item.name %></li>
+      <li> <%= link_to item.name, list_path(item) %></li>
     <% end %>
   </ol>
 </h1>
 <%= link_to "+Add new list",  new_list_path %>
+<br>
