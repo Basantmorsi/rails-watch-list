@@ -11,6 +11,43 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <img  class="avatar-large" src="data:image/png;base64,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" alt="Our website logo">
+          <%# <a class="navbar-brand" href="#">Watch-List</a> %>
+          <%# <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> %>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/lists">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Welcome back Basant!</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
     <%= yield %>
   </body>
 </html>
