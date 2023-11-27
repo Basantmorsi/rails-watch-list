@@ -1,7 +1,7 @@
  <div class="container">
     <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://img.freepik.com/premium-vector/cinema-poster-night-film-movies-popcorn-retro-movie-posters-template-illustration-set_102902-1871.jpg?w=2000');"></div>
     <% if(@lists.empty?) %>
-        <h1> No lists yet </h1>
+        <h1> You have no lists yet </h1>
     <% end %>
     <div class="row row-cols-1 row-cols-md-3 g-4">
       <% @lists.each do |item| %>
@@ -14,5 +14,6 @@
           </div>
       <% end %>
     </div>
-    <%= link_to "+Add new list",  new_list_path %>
+    <%= link_to "Add new list",  new_list_path, class: "btn btn-primary mt-5 mb-5 " %>
+
 </div>
